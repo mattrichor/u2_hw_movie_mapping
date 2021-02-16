@@ -1,5 +1,9 @@
 # Movie DB
 
+## Overview
+
+We'll be building a simple movie application that renders movies and genres to practice mapping over components and passing data with props.
+
 ## Getting Started
 
 - Fork and Clone
