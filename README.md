@@ -72,6 +72,7 @@ render() {
     </div>
   )
 }
+```
 
 - Add a specific background color for each genre associated with the movies in `movies.json`
 
@@ -89,7 +90,7 @@ render() {
     </div>
   )
 }
-
+```
 - Inside your map, start by rendering a `<div>` as a wrapper for each movie and its associated genres
 - Within the wrapper `<div>` render the `<Movie />` component and pass the necessary data from the array as props into the component
 - Now comes the fun part, mapping over the nested array of genres for each movie!
@@ -121,5 +122,5 @@ render() {
 - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-1-25/template_pull_request)
 
 ## Resources
-- [React Mapping Components Lesson]()
-- [React Props Lesson]()
+- [React Mapping Components Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_mapping_components)
+- [React Props Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_props)
