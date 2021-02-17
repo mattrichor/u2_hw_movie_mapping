@@ -11,10 +11,21 @@ We'll be building a simple movie application that renders movies and genres to p
 - Fork and Clone
 - `npm install`
 - `npm start`
+- Create a `components` folder inside of src
 
 
 ## Instructions
-Add homework instructions here.
+### Data
+Within the data folder in `src` take a close look at the structure of the data in `movies.json`.
+- What does this data look like?
+- What sort of information can we get about each movie?
+
+Import the data from `movies.json` into `App.js`.
+```js
+import movieArray from './data/movies.json'
+```
+
+
 components folder
 Movie.js component
 
