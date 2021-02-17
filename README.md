@@ -25,6 +25,13 @@ Import the data from `movies.json` into `App.js`.
 import movieArray from './data/movies.json'
 ```
 
+### Components
+Next we'll need to create 2 components in the `components` folder. One component will be for an individual movie, while the other will be for the genres of a movie.
+- In your `Movie` component, set it up to accept data from props and render it woth JSX
+- What data can be taken from the array of data in `movies.json`?
+- You'll need at least a title, release date, overview, and image for each movie
+
+
 
 components folder
 Movie.js component
