@@ -73,27 +73,53 @@ render() {
   )
 }
 
+- Add a specific background color for each genre associated with the movies in `movies.json`
 
+### Mapping
+Now that you've completed both components, you'll need to `import` them both into `App.js` and map over the data array from movies.json to pass props to them
+- After importing both components into `App.js` you'll need to start by mapping through the data array
+- This can be done either in the render() method or in the return of `App.js`. Example for mapping in the return:
+```js
+render() {
+  return (
+    <div>
+      {movieArray.map((movie, index) => (
+        // Do something here inside the map
+      ))}
+    </div>
+  )
+}
 
-components folder
-Movie.js component
+- Inside your map, start by rendering a `<div>` as a wrapper for each movie and its associated genres
+- Within the wrapper `<div>` render the `<Movie />` component and pass the necessary data from the array as props into the component
+- Now comes the fun part, mapping over the nested array of genres for each movie!
+- Below the `<Movie />` component and within the wrapper `<div>` start a new map method for the genres array of each movie and pass in the genre as props. Example:
+```js
+<div>
+  {movieArray.map((movie, index) => (
+        <div>
+        // Movie component here
 
-## Homework Requirements/End Product/MVP
+        // nested map here
+        {movie.genres.map((genre, index) => (
+          // Render each genre for a movie here by passing props into the Genre component
+        ))}
+        </div>
+  ))}
+</div>
+```
 
-List homework requirements
+- And with that, you've just rendered a nested array with mapping!
+- Make sure to style each movie component to create a professional looking 
 
-- Requirement 1
-- Requirement 2
-
-## Bonus (If Needed)
-
-List bonuses
-- Bonus 1
-- Bonus 2
+## Requirements
+- All movies from `movies.json` should be rendered on the page
+- All genres for each movie should be rendered on the page
+- Each genre should have a unique color associated with it
 
 ## Submission Guidelines
 - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-1-25/template_pull_request)
 
 ## Resources
-- [Lesson 1]()
-- [Lesson 2]()
+- [React Mapping Components Lesson]()
+- [React Props Lesson]()
