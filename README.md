@@ -119,8 +119,8 @@ render() {
 - Each genre should have a unique color associated with it
 
 ## Submission Guidelines
-- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-1-25/template_pull_request)
+- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-4-26/template_pull_request)
 
 ## Resources
-- [React Mapping Components Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_mapping_components)
-- [React Props Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_props)
+- [React Mapping Components Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_mapping_components)
+- [React Props Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_props)
