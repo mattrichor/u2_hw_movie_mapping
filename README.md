@@ -8,11 +8,10 @@ We'll be building a simple movie application that renders movies and genres to p
 
 ## Getting Started
 
-- Fork and Clone
-- `npm install`
-- `npm start`
-- Create a `components` folder inside of src
-
+- `Fork` and `Clone` this repository
+- `npm install` to install our dependencies
+- `npm start` to spin up our app
+- `cd` into the src directory and `mkdir components` to create a folder for our components
 
 ## Instructions
 ### Data
@@ -30,31 +29,30 @@ Next we'll need to create 2 components in the `components` folder. One component
 - In your `Movie` component, set it up to accept data from props and render it with JSX
 - What data can be taken from the array of data in `movies.json`?
 - You'll need at least a title, release date, overview, and image for each movie
-- Make sure to use proper `Class` component syntax
 ```js
- import React, { Component } from 'react'
+ import React from 'react'
  
- export default class Movie extends Component {
-   render() {
-     return (
-       <div>
-         // JSX for movie data from this.props here
-       </div>
-     )
-   }
- }
+ const Movie = () => {
+    return (
+      <div>
+        // JSX for movie data from props here
+      </div>
+    )
+  };
+
+export default Movie;
 ```
 
 Now we'll need to make a component for an individual `Genre` within the array of genres for each movie.
 - Let's keep the JSX simple, since we'll only need to be taking in the name of the genre from props
 - The important aspect of this component is _styling_, we want to know what each genre is at least by color
-- In the JSX for rendering a genre name in the `Genre` component, we'll need to add in some conditional styling. A switch statement inside the render method may be useful here.
+- In the JSX for rendering a genre name in the `Genre` component, we'll need to add in some conditional styling. A switch statement above our return may be useful here.
 - After setting up a switch case to set a variable for colors associated with each genre name that could be coming in from props you'll need to apply it with _inline_ styling in the JSX
-- To style inline, add a style prop on the tag you want to affect and open 2 curly brackets up. Styles are camelCased key value pairs with 'strings' for values. Example:
+- To style inline, add a style prop on the tag you want to affect and open 2 curly brackets up. Styles are camelCased key value pairs with 'strings' for values. 
+Just an Example:
 ```js
-render() {
   let myColorVariable;
-  switch(this.props.genre) {
+  switch(props.genre) {
     case 'some genre': 
       myColorVariable = someColor.associated.with.a.specific.genre
       break
@@ -65,13 +63,12 @@ render() {
   return (
     <div>
       // EXAMPLE of inline styling without a variable
-      <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }} >{this.genre}</p>
+      <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }} >{props.genre}</p>
 
       // EXAMPLE of inline styling WITH a variable
-      <p style={{backgroundColor: myColorVariable, color: '#000000'}} >{this.props.something}</p>
+      <p style={{backgroundColor: myColorVariable, color: '#000000'}} >{props.something}</p>
     </div>
   )
-}
 ```
 
 - Add a specific background color for each genre associated with the movies in `movies.json`
@@ -79,9 +76,8 @@ render() {
 ### Mapping
 Now that you've completed both components, you'll need to `import` them both into `App.js` and map over the data array from movies.json to pass props to them
 - After importing both components into `App.js` you'll need to start by mapping through the data array
-- This can be done either in the render() method or in the return of `App.js`. Example for mapping in the return:
+- This can be done either in the return of `App.js`. Example for mapping in the return:
 ```js
-render() {
   return (
     <div>
       {movieArray.map((movie, index) => (
@@ -89,7 +85,6 @@ render() {
       ))}
     </div>
   )
-}
 ```
 - Inside your map, start by rendering a `<div>` as a wrapper for each movie and its associated genres
 - Within the wrapper `<div>` render the `<Movie />` component and pass the necessary data from the array as props into the component
@@ -111,7 +106,7 @@ render() {
 ```
 
 - And with that, you've just rendered a nested array with mapping!
-- Make sure to style each movie component to create a professional looking 
+- Make sure to style each movie component to create a professional looking app
 
 ## Requirements
 - All movies from `movies.json` should be rendered on the page
