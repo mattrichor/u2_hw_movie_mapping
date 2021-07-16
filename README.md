@@ -1,6 +1,6 @@
 # Movie DB
 
-![movies](https://newsd.in/wp-content/uploads/2018/04/Telugu-Film-Industry-vs-AP-.jpg)
+![movies](https://sei-r.s3.amazonaws.com/u2_hw_mapping_components/preview.png)
 
 ## Overview
 
