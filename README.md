@@ -115,7 +115,3 @@ Now that you've completed both components, you'll need to `import` them both int
 
 ## Submission Guidelines
 - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-11-8/template_pull_request)
-
-## Resources
-- [React Mapping Components Lesson](https://github.com/SEI-R-11-8/u2_lesson_react_mapping_components)
-- [React Props Lesson](https://github.com/SEI-R-11-8/u2_lesson_react_props)
