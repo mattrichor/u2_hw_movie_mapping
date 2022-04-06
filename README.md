@@ -1,6 +1,6 @@
 # Movie DB
 
-![movies](https://sei-r.s3.amazonaws.com/u2_hw_mapping_components/preview.png)
+![movies](https://static.wikia.nocookie.net/fictionaltvstations/images/4/4b/At_the_Movies.jpg/revision/latest?cb=20171002160046)
 
 ## Overview
 
