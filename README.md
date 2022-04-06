@@ -1,4 +1,4 @@
-# Movie DB
+# React Movie Mapping
 
 ![movies](https://static.wikia.nocookie.net/fictionaltvstations/images/4/4b/At_the_Movies.jpg/revision/latest?cb=20171002160046)
 
